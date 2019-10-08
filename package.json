@@ -1,0 +1,23 @@
+{
+  "name": "final-project-dy2018",
+  "version": "1.0.0",
+  "description": "_Special thanks to Tal Wolman for the original version of this project._",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.cs.washington.edu:cse154-19su-students/final-project-dy2018.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "glob": "^7.1.4",
+    "glob-promise": "^3.4.0",
+    "multer": "^1.4.2",
+    "promise-mysql": "^4.1.0"
+  }
+}

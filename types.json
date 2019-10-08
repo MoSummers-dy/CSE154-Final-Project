@@ -1,0 +1,4 @@
+{
+  "type" : ["Health", "Magic Resist", "Health Regen", "Armor", "Attack Damage", "Critical Strike",
+    "Attack Speed", "Life Steal", "Ability Power", "Cooldown Reduction", "Mana", "Mana Regen"]
+}

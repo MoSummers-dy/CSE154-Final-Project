@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+  ***
+  Name: Diana Dai
+  Date: Aug 14, 2019
+  Section: CSE 154 AB
+  TA: Tal Wolman
+
+  This is the index.html page for my Diana's LOL store. It includes several views including
+  products view, specific product detail view, contact us view, loyal member view, Frequently asked
+  Questions and answers view, and a shopping cart view as well.
+  ***
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Diana's LOL Store</title>
+    <link href="index.css" rel="stylesheet" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <!-- Title-->
+    <header>
+      <h1>Diana's LOL Store</h1>
+    </header>
+
+    <!-- Navigation Bar-->
+    <nav>
+      <button id="products-btn">Products</button>
+      <button id="qa-btn">FAQ</button>
+      <button id="contact-btn">Contact</button>
+      <button id="account-btn">Loyal Member</button>
+      <button id="cart-btn">Cart</button>
+    </nav>
+
+    <!-- Products filter and display -->
+    <section id="products-view" class="view">
+      <h2>Main Products</h2>
+      <div>
+        <!-- Category Filter-->
+        <aside id="category-filter">
+          <h2>Type Filter</h2>
+          <div>
+            <input id="all" type="radio" name="type" />
+            <label for="all">All</label>
+          </div>
+        </aside>
+        <!-- Item List-->
+        <section></section>
+      </div>
+    </section>
+
+    <!-- Product Details view -->
+    <section id="detail-view" class="hidden view">
+      <!-- Name of the item to be populated by JavaScript -->
+      <h2></h2>
+      <section id="item-detail">
+        <div id="basic-info">
+          <img src="img/items/ss.png" alt="default image"/>
+          <p id="cost-num"></p>
+          <div>Stock: 500</div>
+          <div>
+            <label for="buy-num">Number:</label>
+            <input type="number" id="buy-num" name="num" value="1" min="1" max="100" required />
+          </div>
+          <p class="cost"></p>
+          <button>Add to Cart</button>
+        </div>
+        <div>
+          <h3>Type</h3>
+          <ul id="type-list"></ul>
+          <h3>Description</h3>
+          <ul id="effect-list"></ul>
+        </div>
+      </section>
+    </section>
+
+    <!-- Q and A -->
+    <section id="qa-view" class="hidden view">
+      <h2>FAQ</h2>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact-view" class="hidden view">
+      <h2>Contact Us</h2>
+        <section>
+          <h3>Questions and Concerns</h3>
+          <form id="contact-form">
+            <p>
+              <label for="contact-name">Name:</label>
+              <input id="contact-name" type="text" name="name" required/>
+            </p>
+            <p>
+              <label for="contact-phone">Phone:</label>
+              <input id="contact-phone" name="phone" type="tel" minlength=10 required />
+            </p>
+            <p>
+              <label for="contact-email">E-mail:</label>
+              <input id="contact-email" name="email" type="email"/>
+            </p>
+            <p><label>Message</label></p>
+            <textarea name="message" rows=5 cols=40 minlength=30 required></textarea>
+            <button>Submit</button>
+          </form>
+        </section>
+    </section>
+
+    <!-- Account -->
+    <section id="account-view" class="hidden view">
+      <h2>Sign up</h2>
+      <!--User input-->
+      <form id="sign-up-form">
+        <p>
+          <label for="account-name">Name:</label>
+          <input id="account-name" type="text" name="name" required />
+        </p>
+        <p>
+          <label for="account-phone">Phone:</label>
+          <input id="account-phone" type="tel" name="phone"  minlength=10 required />
+        </p>
+        <p>
+          <label for="account-email">E-mail:</label>
+          <input id="account-email" type="email" name="email" required />
+        </p>
+        <p>
+          <label for="account-address">Address:</label>
+          <input id="account-address" type="text" name="address" required />
+        </p>
+        <p>
+          <label for="account-password">Password:</label>
+          <input id="account-password" type="password" name="password" minlength=10 required />
+        </p>
+        <button>Submit</button>
+      </form>
+    </section>
+
+    <!-- Cart View -->
+    <section id="cart-view" class="hidden view">
+      <h2>Shopping Cart</h2>
+    </section>
+
+    <!-- Response -->
+    <section>
+      <p id="response"></p>
+    </section>
+
+    <!-- Contact Info -->
+    <section id="contact-info">
+      <ul>
+        <li>Tel: 206-666-2019</li>
+        <li>E-mail: DianaIsTheBest.2019@uw.edu</li>
+        <li>Address: 19 Tony Stark Street, Seattle, WA</li>
+      </ul>
+    </section>
+
+    <!-- All Imgae and information Source: https://na.leagueoflegends.com/en/game-info/items/-->
+    <footer>
+      <p>
+        Made by Diana Dai, 2019 <br />
+        All images and descriptions are from the offical LOL page: <a href="https://na.leagueoflegends.com/en/game-info/items/">Source</a></p>
+    </footer>
+  </body>
+</html>

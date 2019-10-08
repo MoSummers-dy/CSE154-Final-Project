@@ -1,0 +1,165 @@
+/*
+  Name: Diana Dai
+  Date: Aug 14, 2019
+  Section: CSE 154 AB
+  TA: Tal Wolman
+
+  This is the index.css page for my Diana's LOL store page: index.html. It is used by all views in
+  my e-commerce store to give the site a consistent look and feel.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Amiri|Patua+One|Righteous|Coda&display=swap');
+
+body {
+  background-color: LightBlue;
+  background-image: url("img/lol-background.png");
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: auto auto;
+  font-family: 'Coda', cursive;
+}
+
+h1, h2, h3 {
+  font-family: 'Righteous', cursive;
+}
+
+h1, h2, h3, form, footer, #contact-info, #response {
+  text-align: center;
+}
+
+nav, #products-view > div, #products-view section, .product, #item-detail, #basic-info,
+  #cart-view div {
+  display: flex;
+}
+
+nav, #products-view section, #item-detail {
+  align-items: flex-start;
+}
+
+nav, aside, aside div, #cart-view div {
+  margin: 10px;
+}
+
+button, .qa p, #item-detail, .product {
+  padding: 10px;
+}
+
+button {
+  margin: 20px;
+  min-width: 120px;
+  font-family: 'Patua One', serif;
+  font-size: 16px;
+}
+
+nav, #cart-view div {
+  justify-content: space-around;
+}
+
+nav button {
+  width: 25%;
+  background-color: rgba(159, 203, 248, 0.3);
+}
+
+aside, nav {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+aside, #item-detail {
+  background-color: rgba(159, 203, 248, 0.5);
+}
+
+aside {
+  min-width: 200px;
+}
+
+#products-view > div, #products-view section, .product {
+  margin: 5px;
+  justify-content: flex-start;
+}
+
+#products-view section {
+  flex-wrap: wrap;
+}
+
+.product, #basic-info {
+  flex-direction: column;
+  width: 120px;
+}
+
+.product img {
+  width: 75px;
+}
+
+.qa {
+  margin-bottom: 20px;
+}
+
+.qa p, nav button {
+  margin: 0;
+}
+
+.question, #basic-info button {
+  background-color: rgba(245, 246, 159, 0.6);
+}
+
+.answer {
+  background-color: rgba(255, 134, 0, 0.2);
+}
+
+#item-detail {
+  font-family: 'Amiri', serif;
+}
+
+#item-detail, .qa, #cart-view div {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#item-detail img {
+  width: 100px;
+  height: 100px;
+}
+
+form {
+  margin: 2em;
+}
+
+form input, #cart-view div p {
+  width: 200px;
+}
+
+input:invalid {
+  border: dashed red 1px;
+}
+
+#cart-view div, #basic-info, .product {
+  align-items: center;
+}
+
+#cart-view div {
+  background-color: rgba(200, 225, 225, 0.7);
+}
+
+#contact-info {
+  background-color: rgba(112, 112, 112, 0.3);
+}
+
+#contact-info ul {
+  list-style-type: none;
+}
+
+footer {
+  background-color: rgba(248, 159, 196, 0.3);
+  color: rgb(248, 21, 114);
+}
+
+.product:hover {
+  background-color: rgba(236, 244, 253, 0.7);
+}
+
+.hidden {
+  display: none;
+}
